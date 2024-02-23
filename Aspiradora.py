@@ -29,21 +29,12 @@ class Aspiradora:
 
 
     def move_smart(self, board):
-        #if (board[0][0] == "█x█x█x█x█x█" and board[0][1] == "██x█VAC█x██") or (board[0][0] == "█x█x█x█x█x█" and board[0][1] == "████VAC████" or board[0][0] == "██x█VAC█x██"):
-            #self.board[0][0] = "████VAC████"
-            #self.board[0][1] = "███████████"
-        #elif (board[0][1] == "█x█x█x█x█x█" and board[0][0] == "██x█VAC█x██") or (board[0][1] == "█x█x█x█x█x█" and board[0][0] == "████VAC████") or board[0][1] == "██x█VAC█x██":
-            #self.board[0][1] = "████VAC████"
-            #self.board[0][0] = "███████████"
-        if ( board[0][0] == "██x█VAC█x██"):
-             self.board[0][0] = "████VAC████"
-
-        elif (board[0][1] == "██x█VAC█x██"):
-             self.board[0][1] = "████VAC████"
-
-
-
-
+        if (board[0][0] == "█x█x█x█x█x█" and board[0][1] == "██x█VAC█x██") or (board[0][0] == "█x█x█x█x█x█" and board[0][1] == "████VAC████" or board[0][0] == "██x█VAC█x██"):
+            self.board[0][0] = "████VAC████"
+            self.board[0][1] = "███████████"
+        elif (board[0][1] == "█x█x█x█x█x█" and board[0][0] == "██x█VAC█x██") or (board[0][1] == "█x█x█x█x█x█" and board[0][0] == "████VAC████") or board[0][1] == "██x█VAC█x██":
+            self.board[0][1] = "████VAC████"
+            self.board[0][0] = "███████████"
 
 
 
